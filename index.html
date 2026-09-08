@@ -6,53 +6,125 @@
     <meta name="author" content="Ezekiel">
     <meta name="description" content="Website dedicated to informing people about everything that has to do with me! Made for a college class.">
     <meta name="keywords" content="html, coding, web dev, programming">
+
+    <style type="text/css">
+        /* Body Visuals */
+        body {
+            background-image: url('images/background.jpg');
+            background-repeat: no-repeat;
+            max-width: 1000px; margin: auto;
+            background-color: black
+        }
+
+        #Top {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #header {
+            background-position-x: center;
+            background-image: url('images/web-banner.png'); 
+            background-repeat: no-repeat; padding: 10%
+        }
+
+        #header-divider {
+            width: 60%;
+            border: 10px solid rgb(56, 67, 88);
+            border-radius: 6px;
+        }
+
+        .main {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #about {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        #about-text {
+            font-size: 23px;
+            text-align: center;
+            color: rgb(110, 152, 237)
+        }
+
+        #about-text2 {
+            font-size: 23px;
+            text-align: center;
+            color: rgb(110, 152, 237)
+        }
+
+        #about-text3 {
+            font-size: 23px;
+            text-align: center;
+            color: rgb(110, 152, 237)
+        }
+
+        .contacts {
+            background-color: lightblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .site-text {
+            color: rgb(190, 202, 249)
+        }
+
+        /* Logo Offset */
+        #godot-logo {
+            margin-bottom: 100px;
+        }
+    </style>
+
     <title>Zyflx's Sitegrounds</title>
 </head>
-<body style="background-image: url('images/background.jpg'); background-repeat: no-repeat; max-width: 1000px; margin: auto; background-color: black">
-    <nav id="Top" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+<body>
+    <!-- Site Navigation -->
+    <nav id="Top">
         <a href="index.html">Home</a>
         <a href="resume.html">My Resume</a>
     </nav>
-    <header style="background-position-x: center;
-                   background-image: url('images/web-banner.png'); 
-                   background-repeat: no-repeat; padding: 10%">
-    <hr style="width:60%; border:10px solid rgb(56, 67, 88); border-radius:6px;">
-    <main>
-        <h1 style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Welcome to my Sitegrounds.</h1>
-        <h2 style="text-align: center; color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About</h2>
-        <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 23px; text-align: center; color: rgb(136, 247, 255)">
-            Hi! I'm Ezekiel. I'm an 18 year old guy who likes to code for fun and like playing rhythm games.<br>
-            Im currently going for a Associate in Science degree and I hope to do work in the future that relates to my interests.
-        </p>
-        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 23px; text-align: center; color: rgb(136, 247, 255)">
-            Here, you'll find multiple resources that are related to the kinds of work that I do.<br>
-            You find resources such as <i><b>social links, videos, images,</b></i> etc.
-        </p>
-        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 23px; text-align: center; color: rgb(136, 247, 255)">
-            Here are some programming languages I work with!
-            <svg width="120" height="120">
-                <rect x="45" y="70" rx="10" ry="10" width="50" height="50" style="fill:rgb(130, 130, 220); stroke:black; stroke-width:3; opacity:0.5" />
-                <text x="52" y="100" font-size="15" fill="white">Click!</text>
-            </svg>
-            on the images to go to their <span style="color: rgb(95, 112, 182)">site!</span>
-        </p>
-        <a href="https://haxe.org">
-            <img src="images/haxe-logo.png" alt="Haxe Programming Language Logo">
-        </a>
-        <a href="https://godotengine.org">
-            <img style="margin-bottom: 100px" src="images/godot-logo.png" alt="GDScript (Godot) Programming Language Logo">
-        </a>
-    </main>
-    <footer style="background-color: lightblue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-        My Email:
-        <br>
-        <a href="mailto:ezekielxroman@gmail.com">ezekielxroman@gmail.com</a>
-        <br>
-        <br>
-        My Github:
-        <br>
-        <a href="https://github.com/Zyflx">Zyflx - Github</a>
-        <a href="#Top"><br><br>Back to Top</a>
-    </footer>
+    <header id="header">
+    <hr id="header-divider">
+    <div class="main-section"> <!-- Main Section -->
+        <main class="main">
+            <h1>Welcome to my Sitegrounds.</h1>
+            <h2 id="about">About</h2>
+            <p id="about-text">
+                Hi! I'm Ezekiel. I'm an 18 year old guy who likes to code for fun and like playing rhythm games.<br>
+                Im currently going for a Associate in Science degree and I hope to do work in the future that relates to my interests.
+            </p>
+            <p id="about-text2">
+                Here, you'll find multiple resources that are related to the kinds of work that I do.<br>
+                You find resources such as <i><b>social links, videos, images,</b></i> etc.
+            </p>
+            <p id="about-text3">
+                Here are some programming languages I work with!
+                <svg width="120" height="120">
+                    <rect id="click-box-rect" x="45" y="70" rx="10" ry="10" width="50" height="50" style="fill:rgb(130, 130, 220); stroke:black; stroke-width:3; opacity:0.5" />
+                    <text x="52" y="100" font-size="15" fill="white">Click!</text>
+                </svg>
+                on the images to go to their <span class="site-text">site!</span>
+            </p>
+            <a href="https://haxe.org">
+                <img src="images/haxe-logo.png" alt="Haxe Programming Language Logo">
+            </a>
+            <a href="https://godotengine.org">
+                <img id="godot-logo" src="images/godot-logo.png" alt="GDScript (Godot) Programming Language Logo">
+            </a>
+        </main>
+    </div>
+    <div class="bottom-section"> <!-- Bottom Section -->
+        <footer class="contacts">
+            My Email:
+            <br>
+            <a href="mailto:ezekielxroman@gmail.com">ezekielxroman@gmail.com</a>
+            <br>
+            <br>
+            My Github:
+            <br>
+            <a href="https://github.com/Zyflx">Zyflx - Github</a>
+            <a href="#Top"><br><br>Back to Top</a>
+        </footer>
+    </div>
 </body>
 </html>
