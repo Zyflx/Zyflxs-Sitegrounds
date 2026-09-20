@@ -7,81 +7,22 @@
     <meta name="description" content="Website dedicated to informing people about everything that has to do with me! Made for a college class.">
     <meta name="keywords" content="html, coding, web dev, programming">
 
-    <style type="text/css">
-        /* Body Visuals */
-        body {
-            background-image: url('images/background.jpg');
-            background-repeat: no-repeat;
-            max-width: 1000px; margin: auto;
-            background-color: black
-        }
-
-        #Top {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        #header {
-            background-position-x: center;
-            background-image: url('images/web-banner.png'); 
-            background-repeat: no-repeat; padding: 10%
-        }
-
-        #header-divider {
-            width: 60%;
-            border: 10px solid rgb(56, 67, 88);
-            border-radius: 6px;
-        }
-
-        .main {
-            color: white;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        #about {
-            text-align: center;
-            color: aliceblue;
-        }
-
-        #about-text {
-            font-size: 23px;
-            text-align: center;
-            color: rgb(110, 152, 237)
-        }
-
-        #about-text2 {
-            font-size: 23px;
-            text-align: center;
-            color: rgb(110, 152, 237)
-        }
-
-        #about-text3 {
-            font-size: 23px;
-            text-align: center;
-            color: rgb(110, 152, 237)
-        }
-
-        .contacts {
-            background-color: lightblue;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .site-text {
-            color: rgb(190, 202, 249)
-        }
-
-        /* Logo Offset */
-        #godot-logo {
-            margin-bottom: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="zyflxs-sitegrounds.css" type="text/css">
 
     <title>Zyflx's Sitegrounds</title>
 </head>
 <body>
     <!-- Site Navigation -->
     <nav id="Top">
-        <a href="index.html">Home</a>
-        <a href="resume.html">My Resume</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html"><span class="selected">Resume</span></a>
+            </li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="https://scf.edu">SCF Website</a></li>
+        </ul>
     </nav>
     <header id="header">
     <hr id="header-divider">

@@ -1,0 +1,119 @@
+/* Body Visuals */
+body {
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    margin: auto;
+    background-color: black
+}
+
+#top {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    background-position-x: center;
+    background-image: url('images/web-banner.png');
+    background-repeat: no-repeat;
+    padding: 10%
+}
+
+#header-divider {
+    width: 60%;
+    border: 10px solid rgb(56, 67, 88);
+    border-radius: 6px;
+}
+
+.main {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about {
+    text-align: center;
+    color: aliceblue;
+}
+
+#about-text {
+    font-size: 23px;
+    text-align: center;
+    color: rgb(110, 152, 237)
+}
+
+#about-text2 {
+    font-size: 23px;
+    text-align: center;
+    color: rgb(110, 152, 237)
+}
+
+#about-text3 {
+    font-size: 23px;
+    text-align: center;
+    color: rgb(110, 152, 237)
+}
+
+.contacts {
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.site-text {
+    color: rgb(190, 202, 249)
+}
+
+/* Logo Offset */
+#godot-logo {
+    margin-bottom: 100px;
+}
+
+nav a {
+    color: blue;
+    background-color: gray;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(54, 117, 243);
+    background-color: gray
+}
+
+nav nav ul li.selected a {
+    color: white;
+    background-color: gray
+}
+
+nav li {
+    display: inline;
+    padding: 0px 14px;
+    list-style: none
+}
+
+#resume-body {
+    max-width: 1000px;
+    margin: auto
+}
+
+#resume-main {
+    border: 2px blue solid
+}
+
+aside {
+    width: 25%;
+    float: left;
+    text-align: right;
+    padding: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    h1, h2, address {color: rgb(35, 29, 117)}
+    p {color: rgb(35, 29, 117); padding: 3px}
+    background-color: rgb(144, 223, 255);
+    width: 75%;
+    padding: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+img {max-width:100%; height:auto; display: block;}
