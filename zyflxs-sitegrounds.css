@@ -2,7 +2,7 @@
 body {
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     background-color: black
 }
@@ -129,3 +129,16 @@ section {
 }
 
 img {max-width:100%; height:auto; display: block;}
+figure {width:320px; display:inline-block; margin:15px; text-align:center}
+figcaption {color: rgb(20, 15, 85)}
+h3 {color: rgb(20, 15, 85)}
+
+#portfolio {
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    border-color: white;
+    border-width: 100px;
+    background: #097099;
+    background: linear-gradient(90deg,rgba(9, 112, 153, 1) 0%, rgba(193, 87, 199, 1) 52%, rgba(83, 175, 237, 1) 100%);
+}
