@@ -1,3 +1,61 @@
+nav a {
+    color: blue;
+    background-color: gray;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(54, 117, 243);
+    background-color: gray
+}
+
+nav nav ul li.selected a {
+    color: white;
+    background-color: gray
+}
+
+nav {width:100%; text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+nav a {display:block; width:30%;
+text-decoration:none;}
+/* display:block = top to bottom */
+nav li {list-style:none}
+nav li a {border:2px #AAA solid; padding:6px}
+@media only screen and (min-width:640px){
+nav a {display:inline}
+/* display:inline = left to right */
+nav li {display:inline; padding:0 18px}
+} /* Close 640 Media Query for larger screens */ 
+
+nav li {
+    display: inline;
+    padding: 0px 14px;
+    list-style: none
+}
+
+aside {
+    width: 25%;
+    float: left;
+    text-align: right;
+    padding: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    h1, h2, address {color: rgb(35, 29, 117)}
+    p {color: rgb(35, 29, 117); padding: 3px}
+    background-color: rgb(144, 223, 255);
+    width: 75%;
+    padding: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+img {max-width:100%; height:auto; display: block;}
+figure {width:320px; display:inline-block; margin:15px; text-align:center}
+figcaption {color: rgb(20, 15, 85)}
+h3 {color: rgb(20, 15, 85)}
+
 /* Body Visuals */
 body {
     background-image: url('images/background.jpg');
@@ -52,52 +110,9 @@ body {
     color: rgb(110, 152, 237)
 }
 
-.contacts {
-    background-color: lightblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.site-text {
-    color: rgb(190, 202, 249)
-}
-
 /* Logo Offset */
 #godot-logo {
     margin-bottom: 100px;
-}
-
-nav a {
-    color: blue;
-    background-color: gray;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: rgb(54, 117, 243);
-    background-color: gray
-}
-
-nav nav ul li.selected a {
-    color: white;
-    background-color: gray
-}
-
-nav {width:100%; text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-nav a {display:block; width:30%;
-text-decoration:none;}
-/* display:block = top to bottom */
-nav li {list-style:none}
-nav li a {border:2px #AAA solid; padding:6px}
-@media only screen and (min-width:640px){
-nav a {display:inline}
-/* display:inline = left to right */
-nav li {display:inline; padding:0 18px}
-} /* Close 640 Media Query for larger screens */ 
-
-nav li {
-    display: inline;
-    padding: 0px 14px;
-    list-style: none
 }
 
 #resume-body {
@@ -109,30 +124,6 @@ nav li {
     border: 2px blue solid
 }
 
-aside {
-    width: 25%;
-    float: left;
-    text-align: right;
-    padding: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-
-section {
-    h1, h2, address {color: rgb(35, 29, 117)}
-    p {color: rgb(35, 29, 117); padding: 3px}
-    background-color: rgb(144, 223, 255);
-    width: 75%;
-    padding: 14px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-
-img {max-width:100%; height:auto; display: block;}
-figure {width:320px; display:inline-block; margin:15px; text-align:center}
-figcaption {color: rgb(20, 15, 85)}
-h3 {color: rgb(20, 15, 85)}
-
 #portfolio {
     text-align: center;
     margin: 0px;
@@ -143,13 +134,36 @@ h3 {color: rgb(20, 15, 85)}
     background: linear-gradient(90deg,rgba(9, 112, 153, 1) 0%, rgba(193, 87, 199, 1) 52%, rgba(83, 175, 237, 1) 100%);
 }
 
-.box {
-    border-radius: 2px;
-    border: 4px rgb(110, 152, 237) solid;
-}
-
 #posts-info-bar {text-align: center;}
 #posts-info-bar span {background-color: rgb(97, 104, 208);}
 
 blockquote {text-align:justify}
 blockquote:first-letter {font-size:1.8em; font-weight:bold}
+
+#contact {
+    background-color: rgb(76, 41, 137);
+    border: 3px solid rgb(190, 202, 249)
+}
+
+.box {
+    border-radius: 2px;
+    border: 4px rgb(110, 152, 237) solid;
+}
+
+.contact-main {
+    color: rgb(204, 255, 252);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contacts {
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.site-text {
+    color: rgb(190, 202, 249)
+}
+
+.required-field {
+    color: rgba(193, 87, 199, 1)
+}
