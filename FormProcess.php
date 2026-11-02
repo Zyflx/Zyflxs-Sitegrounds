@@ -47,7 +47,6 @@ if(isset($_POST['Email'])) {
     $email_message .= "Last Name: ".clean_string($LastName)."\n";
     $email_message .= "Gender: ".clean_string($Gender)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($Telephone)."\n";
     $email_message .= "Comments: ".clean_string($Comments)."\n";
 	
     // *** Tap [Ctrl] + [F5] to Force Hard Reload/Refresh if you modify the PHP code.
