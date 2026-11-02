@@ -30,15 +30,23 @@
         <hr id="header-divider">
         <div class="main-section"> <!-- Main Section -->
             <main style="padding-left: 150px" class="contact-main">
+                <form name="contactForm" id="contactForm" action="FormProcess.php" method="post">
                 <table id="contact" style="width: 80%;">
                     <th style="text-align: right;">Contact Me!</th>
                     <tr>
                         <td colspan="2" style="text-align: center;"><span class="required-field">*</span> First Name</td>
-                        <td><input name="First Name Here" type="text"></td>
+                        <td><input name="FirstName" type="text"></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;"><span class="required-field">*</span> Last Name</td>
-                        <td><input name="Last Name Here" type="text"></td>
+                        <td><input name="LastName" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Gender</td>
+                        <td>
+                            <input type="radio" name="Gender" id="M" value="M">M
+                            <input type="radio" name="Gender" id="F" value="F">F
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;">Region</td>
@@ -60,12 +68,12 @@
                         <td><input name="Zip Here" type="text"></td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="text-align: center;"><span class="required-field">*</span> Address</td>
-                        <td><input name="Email Here" type="text"></td>
+                        <td colspan="2" style="text-align: center;"><span class="required-field">*</span> Email Address</td>
+                        <td><input id="email" name="Email" type="email" required></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;"><span class="required-field">*</span> Message</td>
-                        <td><textarea cols="20" rows="5" name="Message Here" type="text"></textarea></td>
+                        <td><textarea cols="20" rows="5" name="Comments" type="text"></textarea></td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;"></td>
@@ -73,9 +81,10 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center;"></td>
-                        <td><input name="Submit Form" type="submit" value="Submit Form"></td>
+                        <td><input name="" type="submit" value="Submit Form"></td>
                     </tr>
                 </table>
+                </form>
             </main>
         </div>
 </body>
