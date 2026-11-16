@@ -37,9 +37,35 @@
                 <video style="width: 100%; height: auto" controls src="media/no-time-to-explain.mp4" type="video/mp4"></video>
                 <h1>GIF!</h1>
                 <img style="width: 50%; height: auto;" src="media/zyflx-shy.gif">
-                <h1>Many Images!</h1>
-
+                <h1>Many Images! (Click the arrows to navigate!)</h1>
+                <img class="slide-img" src="media/fnf-oddzone-banner-by-rashbunn.png">
+                <img class="slide-img" src="media/matt26-banner.jpg">
+                <img class="slide-img" src="media/fnf-vs-vamp-banner.jpg">
+                <img class="slide-img" src="media/fnf-vs-tricky-banner.jpg">
+                <button class="button-left" onclick="changeImage(-1)">&#10094;</button>
+                <button class="button-right" onclick="changeImage(1)">&#10095;</button>
+                <h1>A Video From My YouTube!</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TPUqDV_yl-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1>My Twitter! (Click on it to go there!)</h1>
+                <img style="width: 40%" src="media/twitter.png" onclick="goToTwitter()">
             </section>
     </div>
+    <script id="media-script">
+        var curSlide = 0;
+        const slides = document.querySelectorAll('.slide-img');
+
+        changeImage(0);
+        function changeImage(idx) {
+            curSlide += idx;
+            if(curSlide < 0) curSlide = slides.length - 1;
+            if(curSlide > slides.length - 1) curSlide = 0;
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[curSlide].style.display = 'block';
+        }
+
+        function goToTwitter() {
+            window.location.href = 'https://x.com/Zyflx';
+        }
+    </script>
 </body>
 </html>
